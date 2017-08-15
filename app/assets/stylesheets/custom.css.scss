@@ -1,4 +1,9 @@
 $navbar-default-bg: #ed5c5c;
+
+.navbar-nav li a {
+  color: black !important;
+}
+
 #logo {
   float: left;
   font-size: 2em;

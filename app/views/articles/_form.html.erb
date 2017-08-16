@@ -1,16 +1,4 @@
-<% if @article.errors.any? %>
-    <!--<h2>These errors caused the article to not be created: </h2> -->
-    <% if @article.errors.full_messages.length == 1 %>
-        <h3>The following error caused the article to not be created:</h3>
-    <% elsif @article.errors.full_messages.length > 1 %>
-        <h3>The following errors caused the article to not be created:</h3>
-    <% end %>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-      <% end %>
-    </ul>
-<% end %>
+<%= render 'shared/errors', obj: @article %>
 
 
 <div class = 'row'>
